@@ -355,7 +355,7 @@ int main(int argc, char **argv)
         "Press LEFT and RIGHT to skip 5 saves\n"
         "Press A to dump save to 'save/'\n"
         "Press Y to dump save to 'save/{titleID}/{userID}/'\n"
-        "Press ZR to dump all of your saves\n"
+        "Press ZL to dump all of your saves\n"
         "Press X to inject contents from 'inject/'\n"
         "Press R to toggle title ID (for manual look up) if it's garbled text\n"
         "Press PLUS to quit\n\n");
@@ -408,7 +408,7 @@ int main(int argc, char **argv)
             printf("Dump over.\n\n");
         }
 
-        if (kDown & KEY_ZR) {
+        if (kDown & KEY_ZL) {
             if (userConfirm("Dump all saves? This may take a while.")) {
                 for(u32 i = 0; i < saveInfoList.size(); i++) {
                     info = saveInfoList.at(i);
